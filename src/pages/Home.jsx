@@ -46,14 +46,14 @@ const Home = ({ recipes, setRecipes }) => {
   return (
     <div className="container mx-auto mt-6">
       <h1 className="text-2xl font-bold mb-4">Recipes</h1>
-      <CategoryFilter 
+      {/* <CategoryFilter 
         selectedCategory={selectedCategory}
         onCategoryChange={handleCategoryChange}
-      />
+      /> */}
       {filteredRecipes.length > 0 ? (
         <RecipeList recipes={filteredRecipes} />
       ) : (
-        <p>No recipes found for this category.</p>
+        <p> Loading...</p>
       )}
     </div>
   );
